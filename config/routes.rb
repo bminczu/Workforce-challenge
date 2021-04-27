@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  # root 'new_user_session#/new_user_session#'
+  devise_for :users
   resources :shifts
-  resources :users
   resources :organisations
   root 'home#index'
   

@@ -10,6 +10,10 @@
   </head>
 
   <body>
+
+  <% if notice %>
+  <% render 'layouts/alerts' %>
+  <% end %>
   HEADER HERE
   <br/><br/>
     <%= yield %>
